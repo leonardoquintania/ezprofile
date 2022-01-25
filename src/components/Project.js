@@ -140,7 +140,7 @@ const Project = (props) => {
                         {loading ? (
                           skeleton({ width: 'w-28', height: 'h-8' })
                         ) : (
-                          <span className="opacity-70">My Projects</span>
+                          <span className="opacity-70">Meus Projetos</span>
                         )}
                       </h5>
                       {loading ? (
