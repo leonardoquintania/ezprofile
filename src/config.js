@@ -23,14 +23,14 @@ module.exports = {
   },
   skills: [
     'JavaScript',
-    'React.js',
-    'Node.js',
-    'MySQL',
-    'Git',
-    'Docker',
-    'CSS',
+    'Typescript',
+    'Angular 2+',
     'Python',
+    'Node.js',
+    'Docker',
+    'React.js',
     'C#',
+    'SQL',
   ],
   experiences: [
     {
