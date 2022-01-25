@@ -5,7 +5,7 @@ module.exports = {
     sortBy: 'updated', // stars | updated
     limit: 6, // How many projects to display.
     exclude: {
-      forks: True, // Forked projects will not be displayed if set to true.
+      forks: true, // Forked projects will not be displayed if set to true.
       projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
