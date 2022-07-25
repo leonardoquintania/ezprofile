@@ -6,32 +6,30 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-    steps:
+  runs-on: ubuntu-latest
+  steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Set up Node 
-      uses: actions/setup-node@v3.4.1
+    - name: Set up Node
+      uses: actions/setup-node@v3
       with:
-        node-version: '14'
-        npm-version: '7'
+        node-version: 16.x
 
     - name: Cache dependencies
-      uses: actions/cache@v3.0.5
+      uses: actions/cache@v2
       with:
         path: |
           **/node_modules
         key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Build
       run: npm run build
       env:
-         CI: ""
+        CI: ''
          
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
