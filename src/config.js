@@ -6,7 +6,7 @@ module.exports = {
     limit: 6, // How many projects to display.
     exclude: {
       forks: true, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: ['snake', 'leonardoquintania.github.io'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
@@ -23,21 +23,27 @@ module.exports = {
   },
   skills: [
     'JavaScript',
+    'Python',
+    'Docker',
     'Typescript',
     'Angular 2+',
-    'Python',
     'Node.js',
-    'Docker',
+    'SQL',
     'React.js',
     'C#',
-    'SQL',
   ],
   experiences: [
     {
       company: 'TOTVS S/A',
+      position: 'Especialista I FullStack',
+      from: 'Junho 2022',
+      to: 'Até o momento',
+    },
+    {
+      company: 'TOTVS S/A',
       position: 'Analista III de FullStack',
       from: 'Outubro 2020',
-      to: 'Até o momento',
+      to: 'Junho 2022',
     },
     {
       company: 'TOTVS S/A',
